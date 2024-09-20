@@ -5,8 +5,12 @@ document.getElementById('btn-add-money')
         console.log('add money button clicked');
 
         //getInputFieldValueById();
-        const addMoney = getInputFieldValueById();
-        console.log('add money', addMoney)
+        // addMoney = getInputFieldValueById();
+        //console.log('add money', addMoney)
         // const addMoney = document.getElementById('input-add-money').value;
         // const addMoneyNumber = parseFloat(addMoney);
+
+        const addMoney = getInputFieldValueById('input-add-money');
+        const pinNumber = getInputFieldValueById('input-pin-number')
+        console.log('add money', addMoney, pinNumber)
     });
